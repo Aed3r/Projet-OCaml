@@ -1,0 +1,75 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{hyperref}
+
+\pagestyle{headings}
+
+\title{Titre}
+\author{Auteurs}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Une première partie}
+
+\subsection{Une sous-partie}
+
+Une liste :
+\begin{itemize}
+\item une chose ;
+\item deux.
+\end{itemize}
+
+Une liste énumérée :
+\begin{enumerate}
+\item une chose ;
+\item deux.
+\end{enumerate}
+
+\begin{verbatim}
+du code source
+\end{verbatim}
+
+\section{Une deuxième partie}
+
+Des maths : $a_0, \ldots, a_n$
+
+$$
+(a+b)^2 = a^3+3a^2b+3ab^2+b^3  
+$$
+
+Un tableau :
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{||l|c|r|}\hline
+    \textbf{Produit} & \textbf{Prix par} & \textbf{Prix en euro}\\\hline\hline
+    Diamant          & carat             & 5000                 \\\hline
+    Topaze           & gramme            & 2500                 \\\hline
+    Banane           & kilo              & 2                    \\\hline
+    Ferrari          & unité             & 90000                \\\hline
+  \end{tabular}
+  \caption{Une légende}
+\end{table}
+
+
+\section{Insertion d'images}
+
+L'insertion d'image se fait au moyen de la commande \texttt{includegraphics} du package \texttt{graphicx}. Si vous compilez avec \texttt{pdflatex}, vous ne pouvez inclure que des images au format png, jpg et pdf.
+Voir le code source de ce fichier pour un exemple d'insertion d'image.
+%\begin{center}
+%  \includegraphics[scale=0.5]{image.png}
+%\end{center}
+
+
+\end{document}
+
